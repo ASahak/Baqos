@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    </head>
+    <body>
+        
+            <nav class="menu">
+                <i class="fa fa-bars fa fa-3x" aria-hidden="true" id="menu_bars"></i>
+              <ul>
+                <li>im hashivy bereq</li>
+                <li>es qaxcac em</li>
+                <li>paxpaxak em uzum</li>
+                <li>jur kbereq</li>
+              </ul>
+            </nav>
+       
+    <main id="main">
+        <div class="inp">
+            <input type="text" id="change">
+        </div>
+        <div class="keyboard">
+            <p class="polos_1">
+                <input type="button" value="Esc" class="esc">
+                <input type="button" value="q" class="q dail" data-string="q">    
+                <input type="button" value="w" class="w dail" data-string="w">    
+                <input type="button" value="e" class="e dail" data-string="e">    
+                <input type="button" value="r" class="r dail" data-string="r">    
+                <input type="button" value="t" class="t dail" data-string="t">    
+                <input type="button" value="y" class="y dail" data-string="y">    
+                <input type="button" value="u" class="u dail" data-string="u">    
+                <input type="button" value="i" class="i dail" data-string="i">    
+                <input type="button" value="o" class="o dail"  data-string="o">    
+                <input type="button" value="p" class="p dail" data-string="p"> 
+            </p>
+            <p class="polos_2">
+                <input type="button" value="Caps Lock"  class="caps_lock">    
+                <input type="button" value="a" class="a dail" data-string="a">    
+                <input type="button" value="s" class="s dail" data-string="s">    
+                <input type="button" value="d" class="d dail" data-string="d">    
+                <input type="button" value="f" class="f dail" data-string="f">    
+                <input type="button" value="g" class="g dail" data-string="g">    
+                <input type="button" value="h" class="h dail" data-string="h">    
+                <input type="button" value="j" class="j dail" data-string="j">    
+                <input type="button" value="k" class="k dail" data-string="k">    
+                <input type="button" value="l" class="l dail" data-string="l"> 
+            </p>
+            <p class="polos_3">
+                <input type="button" value="Tab" class="tab" data-string="    " id="tab">     
+                <input type="button" value="z" class="z dail" data-string="z">    
+                <input type="button" value="x" class="x dail" data-string="x">    
+                <input type="button" value="c" class="c dail" data-string="c">    
+                <input type="button" value="v" class="v dail" data-string="v">    
+                <input type="button" value="b" class="b dail" data-string="b">    
+                <input type="button" value="n" class="n dail" data-string="n">    
+                <input type="button" value="m" class="m dail" data-string="m">    
+                <input type="button" value="Backspace" class="backspace" onclick="delet()">
+            </p>
+            <p class="polos_4">
+                <input type="button" value="123" class="numbers">    
+                <input type="button" value="Win" class="win">
+                <input type="button" value="Space" class="space" data-string=" " id="space">    
+                <input type="button" value="Enter" class="enter">
+                <input type="button" value="Shift" class="shift">
+            </p>
+        </div>
+        <div class="numb_text">
+            <p class="pol_1">
+                <input type="button" value="1" class="num_1 dail" data-string="1">
+                <input type="button" value="2" class="num_2 dail" data-string="2">
+                <input type="button" value="3" class="num_3 dail" data-string="3">
+            </p>
+            <p class="pol_2">
+                <input type="button" value="4" class="num_4 dail" data-string="4">
+                <input type="button" value="5" class="num_5 dail" data-string="5">
+                <input type="button" value="6" class="num_6 dail" data-string="6">
+            </p>
+            <p class="pol_3">
+                <input type="button" value="7" class="num_7 dail" data-string="7">
+                <input type="button" value="8" class="num_8 dail" data-string="8">
+                <input type="button" value="9" class="num_9 dail" data-string="9">
+            </p>
+            <p class="pol_4">
+                <input type="button" value="ABC" class="ABC">
+                <input type="button" value="0" class="num_0 dail" data-string="0">
+                <input type="button" value="Del" class="del" onclick="delet()">
+            </p>
+        </div>
+    </main>
+        <aside id="aside">
+           
+                <div class="gender">
+                    <div class="male">
+                        <img src="images/female.jpg">
+                        <label><em>Female </em><input type="radio" name="name" id="female"></label>
+                    </div>
+                    <div class="female">
+                        <img src="images/male.png">
+                        <label><em>Male </em><input type="radio" name="name" id="male"></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Name<input type="text" class="form-control" id="my_life"></label>
+                    <button class="btn btn-group" id="welcome">Welcome</button>
+                </div>    
+            
+        </aside>
+        
+        <div class="utox_xmoxner">
+            <div class="kin">
+                <img src="images/femaleres.png" class="femaleres">
+                <img src="images/anachq.png" class="anachq">
+                <img src="images/achqer.png" class="achq">
+                <img src="images/chisburger2.png" class="chisburger2">
+            </div>
+            <div class="mard">
+                <img  src="images/maleres.png" class="maleres">
+                <img  src="images/maleres_glux.png" class="maleres" id="fral">
+                <img  src="images/maleres_glux_skizb.png" class="maleres" id="jnjel">
+                <img src="images/menu_price2.png" class="menu_price2">
+                <img src="images/glass2.png" class="bajak2">
+            </div>
+        </div>
+        <div class="dexin_matucox">
+            <img src="images/dexin.png" class="dexin">
+            <img src="images/padnos.png" class="padnos">
+            <img src="images/minion.png" class="minion">
+        </div>
+        <div class="apranqner">
+            <img src="images/glass.png" class="bajak">
+            <img src="images/menu.png" class="menu_price">
+            <img src="images/chisburger.png" class="chisburger">
+            <img src="images/ice_cream.png" class="ice_cream">
+            <img src="images/ice_cream.png" class="ice_cream2">
+        </div>
+        <div class="modal_window">
+            <i class="fa fa-times fa fa-2x close" aria-hidden="true"></i>
+            <svg width="250" height="250" viewBox="0 0 175 200">
+                <defs>
+                  <linearGradient id="stripes" 
+                                    x1="0" y1="0" x2="100%" y2="50%">
+                          <stop stop-color="hsl(45,100%,65%)" offset="0"/>
+                          <stop stop-color="hsl(320,100%,65%)" offset="50%"/>
+                          <stop stop-color="hsl(200,100%,60%)" offset="100%"/>  
+                    </linearGradient>
+                </defs>
+                  <g>
+                        <path d="M175 58.756c0-39.538-28.619-58.756-87.5-58.756s-87.5 19.219-87.5 58.756c0 45.469 82.331 97.925 85.831 100.131 0.006 0.006 0.019 0 0.031 0.006 0.069 0.044 0.144 0.044 0.219 0.081 0.45 0.238 0.925 0.4 1.419 0.4s0.969-0.162 1.419-0.394c0.069-0.037 0.15-0.037 0.219-0.081 0.006-0.006 0.019 0 0.031-0.006 3.5-2.213 85.831-54.663 85.831-100.137z" />
+                      <path d="M71.875 168.75c-1.725 0-3.125 1.4-3.125 3.125v18.75c0 5.256 4.119 9.375 9.375 9.375h18.75c5.256 0 9.375-4.119 9.375-9.375v-18.75c0-1.725-1.4-3.125-3.125-3.125h-31.25z"/>  
+                      <path d="M6.25 58.756c0-24.819 12.419-40.438 38.475-47.7-13.213 9.575-19.725 25.4-19.725 47.7 0 26.269 19.594 54.95 36.487 74.831-24.113-19.175-55.237-48.937-55.237-74.831z"/>
+                      <path d="M56.25 58.756c0 29.981 12.369 63.381 20.819 82.725-17.138-18.106-45.819-52.85-45.819-82.725 0-29.313 11.988-45.794 37.356-50.825-8.275 9.050-12.356 25.888-12.356 50.825z"/>
+                      <path d="M112.5 58.756c0 34.75-17.975 75.756-25 90.456-7.025-14.694-25-55.681-25-90.456 0-47.063 14.269-52.506 25-52.506s25 5.444 25 52.506z"/>
+                      <path d="M118.75 58.756c0-24.938-4.075-41.775-12.356-50.825 25.369 5.031 37.356 21.519 37.356 50.825 0 29.875-28.681 64.612-45.819 82.725 8.45-19.337 20.819-52.744 20.819-82.725z"/>
+                      <path d="M113.512 133.588c16.894-19.881 36.488-48.556 36.488-74.831 0-22.3-6.513-38.131-19.725-47.7 26.056 7.263 38.475 22.881 38.475 47.7 0 25.894-31.125 55.656-55.238 74.831z"/>
+                      <path d="M100 190.625c0 1.838-1.287 3.125-3.125 3.125h-18.75c-1.838 0-3.125-1.287-3.125-3.125v-15.625h25v15.625z"/>
+                    </g>
+                </svg>
+            <input class="form-control" id="input" disabled>
+            
+        </div>
+        <div class="muzics">
+            <svg version="1.1" width="320" height="320" viewBox="0 0 320 320" fill="none" stroke="#000" stroke-linecap="round"
+             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path id="r1">
+              <animate id="p1" attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite"/>
+              <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin"/>
+            </path>
+            <path id="r2">
+              <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+1s"/>
+              <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+1s"/>
+            </path>
+            <path id="r3">
+              <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+2s"/>
+              <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+2s"/>
+            </path>
+            <path id="r4">
+              <animate id="p1" attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+3s"/>
+              <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+3s"/>
+            </path>
+            <path id="r5">
+              <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+4s"/>
+              <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+4s"/>
+            </path>
+            <path id="r6">
+              <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+5s"/>
+              <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+5s"/>
+            </path>
+          </defs>
+          <use xlink:href="#r1"/>
+          <use xlink:href="#r1" transform="rotate(60 160 160)"/>
+          <use xlink:href="#r1" transform="rotate(120 160 160)"/>
+          <use xlink:href="#r1" transform="rotate(180 160 160)"/>
+          <use xlink:href="#r1" transform="rotate(240 160 160)"/>
+          <use xlink:href="#r1" transform="rotate(300 160 160)"/>
+          <use xlink:href="#r2" transform="rotate(30 160 160)"/>
+          <use xlink:href="#r2" transform="rotate(90 160 160)"/>
+          <use xlink:href="#r2" transform="rotate(150 160 160)"/>
+          <use xlink:href="#r2" transform="rotate(210 160 160)"/>
+          <use xlink:href="#r2" transform="rotate(270 160 160)"/>
+          <use xlink:href="#r2" transform="rotate(330 160 160)"/>
+          <use xlink:href="#r3"/>
+          <use xlink:href="#r3" transform="rotate(60 160 160)"/>
+          <use xlink:href="#r3" transform="rotate(120 160 160)"/>
+          <use xlink:href="#r3" transform="rotate(180 160 160)"/>
+          <use xlink:href="#r3" transform="rotate(240 160 160)"/>
+          <use xlink:href="#r3" transform="rotate(300 160 160)"/>
+          <use xlink:href="#r4" transform="rotate(30 160 160)"/>
+          <use xlink:href="#r4" transform="rotate(90 160 160)"/>
+          <use xlink:href="#r4" transform="rotate(150 160 160)"/>
+          <use xlink:href="#r4" transform="rotate(210 160 160)"/>
+          <use xlink:href="#r4" transform="rotate(270 160 160)"/>
+          <use xlink:href="#r4" transform="rotate(330 160 160)"/>
+          <use xlink:href="#r5"/>
+          <use xlink:href="#r5" transform="rotate(60 160 160)"/>
+          <use xlink:href="#r5" transform="rotate(120 160 160)"/>
+          <use xlink:href="#r5" transform="rotate(180 160 160)"/>
+          <use xlink:href="#r5" transform="rotate(240 160 160)"/>
+          <use xlink:href="#r5" transform="rotate(300 160 160)"/>
+          <use xlink:href="#r6" transform="rotate(30 160 160)"/>
+          <use xlink:href="#r6" transform="rotate(90 160 160)"/>
+          <use xlink:href="#r6" transform="rotate(150 160 160)"/>
+          <use xlink:href="#r6" transform="rotate(210 160 160)"/>
+          <use xlink:href="#r6" transform="rotate(270 160 160)"/>
+          <use xlink:href="#r6" transform="rotate(330 160 160)"/>
+         </svg>
+            
+            
+            <input class="form-control" id="input1" disabled>
+            <p>
+                <i class="fa fa-thumbs-o-up fa fa-4x" aria-hidden="true" id="true"></i>
+                <i class="fa fa-thumbs-o-down fa fa-4x" aria-hidden="true" id="false"></i>
+            </p>
+        </div>
+        <div class="mediPlayer">
+            <audio class="listen" preload="none" data-size="250" src="sounds/piano.mp3"></audio>
+        </div>
+        <div class="rgba">
+            <div class="anna">
+
+                <kbd id="valu_ann">
+
+                </kbd>
+                <a class="btn btn-warning" href="#" role="button" id="close_anna">Ես կայցելեմ Ձեզ</a>
+            </div>
+            <div class="alice">
+
+                <kbd id="valu_all">
+
+                </kbd>
+                <a class="btn btn-warning" href="#" role="button" id="close_alice">Ես կայցելեմ Ձեզ</a>
+            </div>
+            <div class="mari">
+
+                <kbd id="valu_mar">
+
+                </kbd>
+                <a class="btn btn-warning" href="#" role="button" id="close_mari">Ես կայցելեմ Ձեզ</a>
+            </div>
+            <div class="none_female">
+
+                <kbd id="none_female">
+
+                </kbd>
+                <a class="btn btn-warning" href="#" role="button" id="close_none_female">Ես կայցելեմ Ձեզ</a>
+            </div>
+                <div class="arm">
+
+                    <kbd id="valu_arm">
+
+                    </kbd>
+                    <a class="btn btn-warning" href="#" role="button" id="close_arm">Ես կայցելեմ Ձեզ</a>
+                </div>
+            <div class="mk">
+
+                <kbd id="valu_mk">
+
+                </kbd>
+                <a class="btn btn-warning" href="#" role="button" id="close_mk">Ես կայցելեմ Ձեզ</a>
+            </div>
+            <div class="art">
+
+                <kbd id="valu_art">
+
+                </kbd>
+                <a class="btn btn-warning" href="#" role="button" id="close_art">Ես կայցելեմ Ձեզ</a>
+            </div>
+            <div class="none_male">
+
+                <kbd id="none_male">
+
+                </kbd>
+                <a class="btn btn-warning" href="#" role="button" id="close_none_male">Ես կայցելեմ Ձեզ</a>
+            </div>
+        </div>
+        <div id="see">
+            <svg width="1200" height="350" viewBox="0 0 500 350">
+              <path id="myPath" fill="none" stroke="#000000" stroke-miterlimit="10" d="M91.4,104.2c3.2-3.4,18.4-0.6,23.4-0.6c5.7,0.1,10.8,0.9,16.3,2.3
+                c13.5,3.5,26.1,9.6,38.5,16.2c12.3,6.5,21.3,16.8,31.9,25.4c10.8,8.7,21,18.3,31.7,26.9c9.3,7.4,20.9,11.5,31.4,16.7
+                c13.7,6.8,26.8,9.7,41.8,9c21.4-1,40.8-3.7,61.3-10.4c10.9-3.5,18.9-11.3,28.5-17.8c5.4-3.7,10.4-6.7,14.8-11.5
+                c1.9-2.1,3.7-5.5,6.5-6.5"/>
+              <text>
+                <textpath xlink:href="#myPath">
+                  Պատրաստված է Արթուրի կողմից...
+
+                  <animate attributeName="startOffset" from="0%" to ="100%" begin="0s" dur="7s" repeatCount="indefinite" keyTimes="0;1" calcMode="spline" keySplines="0.1 0.2 .22 1"/>
+                </textpath>
+              </text>
+            </svg>
+        </div>
+         <div class="homepage-hero-module" id="pos_absolute">
+            <div class="video-container">
+                <div class="filter"></div>
+                <video class="fillWidth">
+                    <source src="images/baqos.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+        <div id="see_you">
+            <img src="images/see_you.png">
+        </div>
+        <div class="bg_none">
+            
+        </div>
+    </body>
+    <script src="jquery-3.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="player.js"></script>
+    <script src="index.js"></script>
+    
+    <script>
+    
+        function delet() {
+       var txtinput = document.getElementById("change");
+       txtinput.value = txtinput.value.substr(0, txtinput.value.length - 1);
+     }
+    </script>
+</html>
